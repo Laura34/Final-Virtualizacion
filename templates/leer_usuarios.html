@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<style>
+    table, th, td {border:1px solid black; }
+</style>
+<body>
+<h2>Mostrar Usuarios</h2>
+<div>
+    <table style="width:100%">
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Correo</th>
+        </tr>
+    {% for usuario in usuarios %}
+        <tr>
+            <td>{{ usuario[0] }}</td>
+            <td>{{ usuario[1] }}</td>
+            <td>{{ usuario[2] }}</td>
+            <td>{{ usuario[3] }}</td>
+        </tr>
+    {% endfor %}
+    </table>
+</div>
+</body>
+</html>

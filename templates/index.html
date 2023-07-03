@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Final
+    </title>
+    <style>
+    input {width:300px; }
+    </style>
+</head>
+<body>
+<form method="post">
+    <h2>Información de bancos</h2>
+<input type="text" name="host"
+       placeholder="host"
+       value="{{ request.form['host'] }}" />
+<br/>
+<input type="text" name="user"
+       placeholder="user"
+       value="{{ request.form['usuario'] }}" />
+<br/>
+<input type="password" name="password"
+       placeholder="password"
+       value="{{ request.form['password'] }}"/>
+<br/>
+<button type="submit">Conectar</button>
+</form>
+<span> {{ mensaje }}</span>
+<p align="center">
+    <a href=usuarios >
+    <button class=grey style="height:75px;width:150px">Ver Usuarios</button>
+    </a>
+    <a href=peliculas >
+    <button class=grey style="height:75px;width:150px">Ver Peliculas</button>
+    </a>
+</p>
+</body>
+</html>

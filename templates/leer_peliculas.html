@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<style>
+    table, th, td {border:1px solid black; }
+</style>
+<body>
+<h2>Mostrar Peliculas</h2>
+<div>
+    <table style="width:100%">
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Genero</th>
+        </tr>
+    {% for pelicula in peliculas %}
+        <tr>
+            <td>{{ pelicula[0] }}</td>
+            <td>{{ pelicula[1] }}</td>
+            <td>{{ pelicula[2] }}</td>
+        </tr>
+    {% endfor %}
+    </table>
+</div>
+</body>
+</html>
