@@ -4,7 +4,7 @@ from mysql.connector import connect
 
 class Conexion:
     def __init__(self):
-        self.database = 'Final'
+        self.database = 'LAURA'
 
     def conectar(self, user, password, host):
         self.user=user
